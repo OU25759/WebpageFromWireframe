@@ -1,0 +1,156 @@
+/* 
+  This document is valid CSS3 
+    [date tested 05-10-2021 @ https://www.cssportal.com/css-validator/]
+    author: Stuart Wickenden
+    OUCU: sw25759
+*/
+/*  set global body  */
+body {
+    margin: 0 auto; /* set margin to 0 auto  */
+    padding: 0; /* set padding to 0  */
+    font-size: 14px; /* set font to 14px  */
+    background-color: #ababab; /* set a kind background colour for the eyes */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* set font family as instructed */
+    width: 100vw; /* set width of body */
+}
+/*  set global */
+a {
+    color: #fefefe; /* set colour of a links globally   */
+    text-decoration: none; /* disable text decoration, underline */
+}
+.active, a:hover, a:focus  {
+    border-bottom: 3px #ff0000 solid ; /* create underline for link when active using border-bottom */
+}
+/* set header */
+.header {
+    background-color: #333333; /* set background colour as instructed */
+    color: #fefefe; /* set dialogue colour as instructed */
+    padding: 0; /* set padding to 0 */
+    width: 1024px; /* set width of header */
+    margin: 0 auto; /* set margin to 0 auto */
+}
+.header a {
+    font-size: 120%; /* set header font-size to 120%  */
+}
+.header ul li a:active {
+    color: #fefefe; /* set colour of active links within ul li */
+    text-decoration: none; /* disable text decoration for links within ul li header */
+}
+.header ul li {
+    display: inline; /* set inline */
+    margin-right: 1em; /* give space between li cells */
+}
+/* set main */
+.main {
+    margin: 0 auto; /* set margin to 0 auto */
+    padding: 0; /* set padding to 0 */
+    width: 1024px; /* set main width to 1024px as instructed */
+}
+.main a:hover , a:focus {
+    border-bottom: 3px solid #ff0000; /* set border bottom to emulate underline for state hover and focus; for links within main */
+}
+h1 {
+    padding: 0; /* set padding to 0 */
+    margin: 0; /* set margin to 0 */
+}
+h2 {
+    padding: 0; /* set padding to 0 */
+    margin: 0; /* set margin to 0 */
+    margin-bottom: 0.5em; /* set margin bottom - to allow space for better viewing of title */
+}
+/* set sections */
+.sections-wrapper {
+    min-height: 100%; /* set min-height for sections wrapper */
+    flex-direction: column; /* set flex direction */
+    width: 100%; /* set wrapper width */
+  }
+  .sections-row {
+    border: 1px solid blue; /* set colour for border */
+    display: flex; /* set flex */
+  }
+  .sections-col-left {
+    background-color: rgb(147, 134, 161); /* set a background colour for the left section */
+    /* border: 1px solid red; */
+    flex: 0.7; /* set flex constraint */
+  }
+  .sections-col-right {
+    background-color: rgb(179, 179, 209); /* set a background colour for the right section */
+    /* border: 1px solid red; */
+    flex: 0.3; /* set flex constraint */
+  }
+/* set section gallery */
+.section-gallery {
+    /* background-color: rgb(89, 90, 131); /* guides for testing */
+    /* border: 2px rgb(89, 90, 131) solid; /* guides for testing */
+    display: flex; /* set flex */
+    flex-wrap: wrap; /* set flex style */
+    justify-content: space-around; /* set flex content style */
+}
+.section-gallery .item {
+    width: 11vw; /* set item to a size that fits */
+    border: 3px yellow solid; /* set a border  */
+    padding: 5px; /* set padding */
+    flex-basis: 30%; /* set flex-basis for items */
+    margin-bottom: 7px; /* set margin bottom */
+    display: flex; /* set flex */
+    flex-direction: column; /* set flex direction */
+}
+.section-gallery .item a {
+    text-decoration: none; /* disable text decoration  */
+}
+.section-gallery .item a:hover , .section-gallery .item a:focus {
+    text-decoration: underline; /* set underline for states hover and focus on links within section gallery  */
+}
+.section-gallery .item .image img {
+    /* width: 11vw; */
+    margin-left: auto; /* set margin for image placement */
+    margin-right: auto; /* set margin for image placement */
+    display: block; /* set display block */
+    max-width: 100%; /* set max-width */
+    width: auto; /* set width auto */
+    min-height: 190px; /* set min-height */
+    object-fit: cover; /* set image fit */
+}
+.image-title {
+    padding-left: 3px; /* set padding for cleaner view */
+}
+/* set section news */
+.section-news {
+    margin: 0; /* set margin to 0 */
+    padding: 0; /* set padding to 0 */
+    /* background-color: darkmagenta; /* guides for testing */
+    /* border: 2px darkmagenta solid; /* guides for testing */
+}
+.news-item {              
+    background-color: rgb(137, 159, 206); /* set news item background colour */ 
+    border: 2px rgb(139, 0, 46) solid; /* guides for testing */
+    line-height:1.2; /* set line height for better visual */
+    margin-bottom: 25px; /* set a margin to give minimum of 15px space between news items */
+}
+.news-item-title,
+.news-item-date {
+    padding: 0; /* set padding 0 */
+    margin: 0; /* set margin 0 */
+}
+.category-title {
+    font-size: 180%; /* set category title font-size */
+    font-weight: 600; /* set category title font-weight */
+}
+.news-item-title {
+    font-size: 110%; /* set news item title font-size */
+    font-weight: bold; /* set news item title font-weight */
+}
+.news-item-date {
+    font-size: 80%; /* set news item date font-size */
+}
+.news-item-body {
+    margin-top: 4px; /* set news item body margin-top - for cleaner view */
+    font-size: 90%; /* set news item body font-size - for cleaner view */
+    margin-bottom: 20px; /* set news item body margin-bottom - for cleaner view */
+    min-height: 100px; /* set news item body min-height - for layout */
+}
+.news-item-body a { 
+    padding: 4px; /* set padding to 4px for news item 'read more' links - for clean view and layout */
+    float: right; /* float|align right the link to the right */
+    bottom: 0; /* set link to bottom */
+}
